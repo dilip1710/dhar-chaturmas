@@ -4,20 +4,21 @@ body {
     margin: 0;
     padding: 0;
 }
-
+.but-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
 .contact-button {
-    display: inline-block;
     padding: 15px 30px;
     font-size: 18px;
     color: white;
     background-color: #8C3061;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     text-decoration: none;
-    transition: background-color 0.3s ease;
-    margin: 20px auto;
-    display: block;
-    text-align: center;
+    transition: background-color  0.3s ease;
 }
 
 .contact-button:hover {
@@ -31,24 +32,23 @@ body {
 .contact-container {
     background-color: white;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     display: flex;
+    justify-content:space-evenly;
     align-items: center;
-    height: auto;
     width: 80%;
     max-width: 1200px;
     margin: 60px auto;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .image-container {
-    flex: 1;
-    padding-right: 20px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
-.image-container img {
+.image-container img{
     width: 100%;
     max-width: 400px;
     border-radius: 50%;
@@ -56,8 +56,6 @@ body {
 }
 
 .address-container {
-    flex: 1;
-    padding-left: 20px;
     text-align: center;
 }
 
@@ -70,28 +68,25 @@ body {
 .address-container p {
     margin: 5px 0;
     line-height: 1.6;
-    color: #555;
+    color: #131313;
+    font-size: 20px;
 }
 
 @media (min-width: 768px) {
     .contact-container {
         flex-direction: row;
-        height: 400px;
-    }
-    .contact-button {
-        margin: 20px 0 0 690px;
-        display: inline-block;
-        text-align: left;
+        height: auto; 
     }
     .image-container, .address-container {
         text-align: left;
+        margin-bottom: 0; 
     }
 }
 
 @media (max-width: 480px) {
-    .contact-button {
-        font-size: 16px;
-        padding: 10px 20px;
+    .contact-container {
+        flex-direction: column;
+        height: auto; 
     }
     .address-container h2 {
         font-size: 28px;
