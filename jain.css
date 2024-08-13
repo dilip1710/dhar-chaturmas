@@ -1,164 +1,237 @@
-/*#########  ganral codeing ##############*/
+/* General coding */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-*{  
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    color:#555;
-    background:#FF8C9E;
+
+body {
+    color: #555;
+    background: #FF8C9E;
+    font-family: 'Montserrat', sans-serif;
 }
-.login-logo{
-    height:250px;
-    padding:60px 35px 35px 35px;
+
+.login-logo {
+    height: 250px;
+    padding: 60px 35px 35px 35px;
+    text-align: center;
 }
-.logo{
-    border:1px solid black;
+
+.logo {
+    border: 1px solid black;
     background-color: black;
-    font-size:80px;
-    text-align:center;
-    width:100px;
-    height:100px;
+    font-size: 80px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    
+    margin: 0 auto;
 }
-.field{
-    width:100%;
-    padding:10px;
+
+.field {
+    width: 100%;
+    padding: 10px;
 }
-.field input{
+
+.field input {
     border: none;
     outline: none;
-    background:none;
+    background: none;
     font-size: 18px;
-    color:#555;
-    padding:20px 10px 20px 5px;
-    
+    color: #555;
+    padding: 20px 10px 20px 5px;
+    width: 100%;
 }
+
 .name,
 .mobile,
-.password{
-    margin-bottom:30px;
-    border-radius:25px;
-    box-shadow:4px 4px 4px #cdced1;
+.password {
+    margin-bottom: 30px;
+    border-radius: 25px;
+    box-shadow: 4px 4px 4px #cdced1;
     background-color: #fff;
 }
-.signin-button{
+
+.signin-button {
     outline: none;
     border: none;
     cursor: pointer;
-    width:100%;
-    height:60px;
+    width: 100%;
+    height: 60px;
     border-radius: 30px;
     font-size: 20px;
-    font-weight: 700px;
-    color:#fff;
+    font-weight: 700;
+    color: #fff;
     text-align: center;
-    background-color:#8C3061 ;
-    box-shadow:4px 4px 4px #cdced1;
-    transition:all 0.5s;
+    background-color: #8C3061;
+    box-shadow: 4px 4px 4px #cdced1;
+    transition: all 0.5s;
     margin-bottom: 30px;
-} 
-.signin-button:hover{
-    background-color:#db0e0e;
 }
-.signin-button:active{
-    background-color:#ed4b10;
+
+.signin-button:hover {
+    background-color: #db0e0e;
 }
-.link{
-    padding:20px;
+
+.signin-button:active {
+    background-color: #ed4b10;
+}
+
+.link {
+    padding: 20px;
     text-align: center;
     border-radius: 30px;
 }
-.link a{
-    text-decoration:none;
-    color:rgb(17, 16, 16);
+
+.link a {
+    text-decoration: none;
+    color: rgb(17, 16, 16);
     font-size: 15px;
 }
-.flex{
+
+.flex {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: 24px;
     font-weight: 700;
+    padding: 20px;
 }
-.login{
-    width: 25rem;
+
+.login {
+    width: 100%;
+    max-width: 400px;
 }
-.box{
+
+.box {
     text-align: center;
-    width:60%;
-    
-    margin-top:70px;
-    padding:40px 15px 15px 15px;
+    width: 100%;
+    max-width: 700px;
+    margin-top: 30px;
+    padding: 40px 15px;
     color: black;
 }
-.wrapper{
+
+.wrapper {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     text-align: center;
-    padding:250px 15px 15px 15px;
+    padding: 50px 15px;
+    flex-wrap: wrap;
 }
-.wrapper .button{
-    display:inline-block;
-    height:60px;
-    width:60px;
-    margin:5px;
-    overflow:hidden;
-    background-color:#fff;
+
+.wrapper .button {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 10px;
+    overflow: hidden;
+    background-color: #fff;
     border-radius: 50px;
-    cursor:pointer;
-    box-shadow: 0px 10px 10px  rgba(0,0,0,0.1);
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-out;
-}
-.wrapper .button:hover{
-    width: 200px;
-}
-.wrapper .button .icon{
-    display:inline-block;
     text-align: center;
-    height:60px;
-    width:60px;
-    border-radius:50%;
+}
+
+.wrapper .button:hover {
+    width: 160px;
+}
+
+.wrapper .button .icon {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
     box-sizing: border-box;
-    line-height:60px;
+    line-height: 60px;
     transition: all 0.3s ease-out;
 }
-.wrapper .button:nth-child(1):hover .icon{
-    background:#4267b2;
+
+.wrapper .button:nth-child(1):hover .icon {
+    background: #4267b2;
 }
-.wrapper .button:nth-child(2):hover .icon{
-    background:#E4405F;
+
+.wrapper .button:nth-child(2):hover .icon {
+    background: #E4405F;
 }
-.wrapper .button:nth-child(3):hover .icon{
-    background:#25D366;
+
+.wrapper .button:nth-child(3):hover .icon {
+    background: #25D366;
 }
-.wrapper .button:nth-child(4):hover .icon{
-    background:#FF0000;
+
+.wrapper .button:nth-child(4):hover .icon {
+    background: #FF0000;
 }
-.wrapper .button .icon i{
+
+.wrapper .button .icon i {
     font-size: 25px;
-    line-height:60px;
+    line-height: 60px;
 }
-.wrapper .button:hover .icon i{
-    color:#fff;
+
+.wrapper .button:hover .icon i {
+    color: #fff;
     transition: all 0.3s ease-out;
 }
-.wrapper .button span{
-    font-size:20px;
-    font-weight:600;
-    line-height:60px;
-    margin-left:10px;
+
+.wrapper .button span {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 60px;
+    margin-left: 10px;
     transition: all 0.3s ease-out;
 }
+
 .wrapper .button:nth-child(1) span {
-    color:#4267b2;
+    color: #4267b2;
 }
-.wrapper .button:nth-child(2) span{
-    color:#E4405F;
+
+.wrapper .button:nth-child(2) span {
+    color: #E4405F;
 }
-.wrapper .button:nth-child(3) span{
-    color:#25D366;
+
+.wrapper .button:nth-child(3) span {
+    color: #25D366;
 }
-.wrapper .button:nth-child(4) span{
-    color:#FF0000;
+
+.wrapper .button:nth-child(4) span {
+    color: #FF0000;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (min-width: 768px) {
+    .flex {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .login {
+        width: 40%;
+    }
+
+    .box {
+        width: 50%;
+    }
+
+    .wrapper {
+        padding: 50px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .login {
+        width: 30%;
+    }
+
+    .box {
+        width: 40%;
+    }
+
+    .wrapper {
+        padding: 100px;
+    }
 }
