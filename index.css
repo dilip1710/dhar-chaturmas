@@ -99,6 +99,9 @@ body {
     animation: glow 0.2s ease-in-out infinite alternate;
     margin: 20px auto;
 }
+.wrapper .copy{
+    font-size: 20px;
+}
 @keyframes glow {
     0% {
         text-shadow: 0 0 5px #91DDCF, 0 0 10px #FFE9D0, 0 0 15px #FF76CE, 0 0 20px #8C3061;
@@ -178,7 +181,7 @@ body {
 }
 
 .copy {
-    font-size: 10px;
+    font-size: 15px;
     color: black;
     text-align: center;
     margin: 20px 0;
