@@ -74,7 +74,7 @@ body {
 
 @media (min-width: 768px) {
     .contact-container {
-        flex-direction: row;
+        flex-direction: column;
         height: auto; 
     }
     .image-container, .address-container {

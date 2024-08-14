@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -7,53 +5,67 @@
 }
 
 body {
-    color: #555;
+    color: #0f0f0f;
     background: #FF8C9E;
 }
 
 .login-logo {
-    height: 250px;
-    padding: 60px 35px 35px 35px;
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo {
-    border: 1px solid black;
-    background-color: black;
-    font-size: 80px;
+    background-color: #8C3061;
+    color: #fff;
+    font-size: 60px;
     text-align: center;
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    width: 100%; 
+    transform: translateX(100px);
 }
 
 .field {
     width: 100%;
-    padding: 10px;
-}
-
-.field input {
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 18px;
-    color: #555;
-    padding: 20px 10px 20px 5px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px; 
 }
 
 .name,
-.mobile,
-.password {
-    margin-bottom: 30px;
+.mobile {
+    width: 100%;
+    margin-bottom: 20px;
     border-radius: 25px;
-    box-shadow: 4px 4px 4px #cdced1;
+    box-shadow: 4px 4px 4px #8C3061;
     background-color: #fff;
 }
 
-.signin-button {
-    outline: none;
+.name input,
+.mobile input {
     border: none;
-    cursor: pointer;
+    outline: none;
+    background: none;
+    font-size: 14px;
+    color: #555;
+    padding: 20px 15px; 
     width: 100%;
+    border-radius: 25px;
+}
+
+.signin-button {
+    width: 100%;
+    max-width: 400px;
     height: 60px;
     border-radius: 30px;
     font-size: 20px;
@@ -61,9 +73,11 @@ body {
     color: #fff;
     text-align: center;
     background-color: #8C3061;
-    box-shadow: 4px 4px 4px #cdced1;
+    box-shadow: 4px 4px 4px #8C3061;
     transition: all 0.5s;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    border: none;
+    cursor: pointer;
 }
 
 .signin-button:hover {
@@ -74,86 +88,34 @@ body {
     background-color: #ed4b10;
 }
 
-.flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    font-weight: 700;
-    text-align: center;
-}
-
-.login {
-    width: 90%;
-    max-width: 400px;
-    margin: 0 auto; 
-}
-
-.box {
-    text-align: center;
-    width: 90%;
-    max-width: 600px;
-    margin: 70px auto;
-    padding: 40px 20px;
-    color: rgb(73, 69, 69);
-}
-
 .glow-text {
+    width: 80%;
+    max-width: 800px;
     font-size: 24px;
     color: #8C3061;
-    text-align: center;
-    position: relative;
     padding: 20px;
     font-weight: bold;
     text-shadow: 0 0 5px #8C3061, 0 0 10px #8C3061, 0 0 15px #8C3061, 0 0 20px #8C3061;
     animation: glow 0.2s ease-in-out infinite alternate;
+    margin: 20px auto;
 }
-
 @keyframes glow {
     0% {
-        text-shadow: 0 0 5px rgb(247, 242, 242), 0 0 10px #0ec94c, 0 0 15px #c61f54, 0 0 20px #8C3061;
+        text-shadow: 0 0 5px #91DDCF, 0 0 10px #FFE9D0, 0 0 15px #FF76CE, 0 0 20px #8C3061;
     }
     100% {
-        text-shadow: 0 0 10px rgb(245, 240, 240), 0 0 20px #0ec94c, 0 0 30px #c61f54, 0 0 40px #8C3061;
+        text-shadow: 0 0 10px #91DDCF, 0 0 20px #FFE9D0, 0 0 30px #FF76CE, 0 0 40px #8C3061;
     }
 }
 
 .wrapper {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     gap: 15px;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-}
-
-.wrapper .button {
-    display: flex;
-    align-items: center;
-    height: 60px;
-    width: 60px;
-    overflow: hidden;
-    background-color: #fff;
-    border-radius: 50px;
-    cursor: pointer;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-out;
-    position: relative;
-    justify-content: center;
-}
-
-.wrapper .button .icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    background: #fff;
-    transition: all 0.3s ease-out;
-    position: absolute;
+    flex-wrap: wrap;
 }
 
 .social-button {
@@ -192,6 +154,7 @@ body {
 .social-button:hover .icon {
     background: #FF0000;
 }
+
 .social-button:hover .icon i {
     color: #fff;
     transition: all 0.3s ease-out;
@@ -213,87 +176,38 @@ body {
     transform: translateX(25px);
     opacity: 1;
 }
+
 .copy {
-    font-size: 16px;
+    font-size: 10px;
     color: black;
     text-align: center;
     margin: 20px 0;
 }
-
 @media (max-width: 768px) {
-    .login-logo {
-        height: auto;
-        padding: 30px 20px;
+    .field {
+        width: 80%;
+        order: 2;
     }
-
-    .logo {
-        font-size: 60px;
-        width: 80px;
-        height: 80px;
+    .glow-text{
+        order: 1;
     }
-
-    .glow-text {
-        font-size: 20px;
-    }
-
-    .signin-button {
-        font-size: 18px;
-        height: 50px;
-    }
-
-    .social-button {
-        width: 100%;
-    }
-
-    .social-button:hover {
-        width: 100%;
-    }
-
-    .flex {
-        font-size: 20px;
+    .box{
         flex-direction: column;
-        align-items: center;
-    }
-
-    .box {
-        width: 100%;
-        margin: 30px auto;
-        padding: 20px 10px;
-    }
-
-    .copy {
-        margin: 10px 0;
-        font-size: 14px;
+        transform: translateX(0px);
     }
 }
 
 @media (max-width: 480px) {
-    .logo {
-        font-size: 50px;
-        width: 60px;
-        height: 60px;
+    .field {
+        width: 90%;
+        order: 2;
+    }
+    .glow-text{
+        order: 1;
+    }
+    .box{
+        flex-direction: column;
+        transform: translateX(0px);
     }
 
-    .glow-text {
-        font-size: 18px;
-    }
-
-    .signin-button {
-        font-size: 16px;
-        height: 45px;
-    }
-
-    .social-button {
-        font-size: 16px;
-        height: 50px;
-        line-height: 50px;
-    }
-
-    .social-button span {
-        font-size: 18px;
-    }
-
-    .copy {
-        font-size: 12px;
-    }
 }

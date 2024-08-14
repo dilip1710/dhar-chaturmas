@@ -16,7 +16,7 @@
 }
 
 .header .logo {
-  width: 20px;
+  width: 30px;
   height: auto;
   margin: 20px;
   padding: 10px;
@@ -243,7 +243,7 @@
 .photo .first,
 .photo .second,
 .photo .third,
-.photo .four {
+.photo .fourth {
   border: 1px solid black;
   display: flex;
 }
@@ -489,7 +489,13 @@
   .post .post3 {
     width: 90%;
   }
-
+  .front{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .page{
+    order:2;
+  }
   .footer p {
     font-size: 24px;
   }
@@ -497,6 +503,11 @@
     flex-direction: column;
     align-items: center;
     text-align: center; 
+  }
+  .first, .second, .third, .fourth{
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
 }
 
@@ -512,12 +523,17 @@
   .slider .st {
     width: 100%;
   }
-
+  .front{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .page{
+    order:2;
+  }
   .front .image img {
     height: 60px;
     width: 60px;
   }
-
   .footer p {
     font-size: 20px;
   }
@@ -525,5 +541,11 @@
     flex-direction: column;
     align-items: center;
     text-align: center; 
+  }
+  .first, .second, .third, .fourth{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
   }
 }
