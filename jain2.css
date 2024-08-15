@@ -243,7 +243,8 @@
 .photo .first,
 .photo .second,
 .photo .third,
-.photo .fourth {
+.photo .fourth,
+.photo .fifth {
   border: 1px solid black;
   display: flex;
 }
@@ -504,7 +505,7 @@
     align-items: center;
     text-align: center; 
   }
-  .first, .second, .third, .fourth{
+  .first, .second, .third, .fourth,.fifth{
     flex-direction: column;
     align-items: center;
     gap: 10px;
@@ -542,7 +543,7 @@
     align-items: center;
     text-align: center; 
   }
-  .first, .second, .third, .fourth{
+  .first, .second, .third, .fourth,.fifth{
     flex-direction: column;
     align-items: center;
     text-align: center;
