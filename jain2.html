@@ -1,3 +1,23 @@
+<?php
+// Check if form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Get the form data
+    $user = $_POST['user'];
+    $mobile = $_POST['mobile'];
+
+    // Define the file path (this could be any path, e.g., data.txt)
+    $file = 'data.txt';
+
+    // Format the data to be saved
+    $data = "Name: $user, Mobile: $mobile\n";
+
+    // Save the data into the file
+    file_put_contents($file, $data, FILE_APPEND | LOCK_EX);
+
+    // Optional: Provide feedback to the user
+    echo "Data saved successfully!";
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,7 +54,7 @@
                 <input type="radio" name="radio-btn" id="radio6">
 
                 <div class="st first">
-                    <img src="picture/pravesh1.jpeg" alt="">
+                    <img src="picture/jhanda1.jpeg" alt="">
                 </div>
                 <div class="st">
                     <img src="picture/pravesh17.jpeg" alt="">
@@ -195,21 +215,18 @@
                     <img src="picture/Nav2.jpeg" alt="">
                     <img src="picture/nav3.jpeg" alt="">
                     <img src="picture/nav4.jpeg" alt="">
-
-                </div>
+            </div>
                 <button class="gallery" onclick="clickview(this)">Gallery</button>
             </div>
         </div>
         <div class="fifth">
             <p>झंडा वंदन : गुरुवार 15/08/2024<br><br>
-                
             </p>
             <div class="image">
                 <img src="picture/jhanda1.jpeg" alt="">
                 <img src="picture/jhanda2.jpeg" alt="">
                 <div class="hidden-images">
-                    
-                </div>
+            </div>
                 <button class="gallery" onclick="clickview(this)">Gallery</button>
             </div>
         </div>
