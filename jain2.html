@@ -1,23 +1,3 @@
-<?php
-// Check if form is submitted
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Get the form data
-    $user = $_POST['user'];
-    $mobile = $_POST['mobile'];
-
-    // Define the file path (this could be any path, e.g., data.txt)
-    $file = 'data.txt';
-
-    // Format the data to be saved
-    $data = "Name: $user, Mobile: $mobile\n";
-
-    // Save the data into the file
-    file_put_contents($file, $data, FILE_APPEND | LOCK_EX);
-
-    // Optional: Provide feedback to the user
-    echo "Data saved successfully!";
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -54,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <input type="radio" name="radio-btn" id="radio6">
 
                 <div class="st first">
-                    <img src="picture/jhanda1.jpeg" alt="">
+                    <img src="picture/s image5.jpeg" alt="">
                 </div>
                 <div class="st">
                     <img src="picture/pravesh17.jpeg" alt="">
@@ -181,6 +161,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <img src="picture/s image2.jpeg" alt="">
                 <div class="hidden-images">
                     <img src="picture/s image3.jpeg" alt="">
+                    <img src="picture/s image4.jpeg" alt="">
+                    <img src="picture/s image5.jpeg" alt="">
                     <video controls height="220" width="390">
                         <source src="picture/video2.mp4" type="video/mp4">
                     </video>
@@ -198,8 +180,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <img src="picture/pravesh17.jpeg" alt="">
                 <img src="picture/pravesh9.jpeg" alt="">
                 <div class="hidden-images">
-                    <img src="DSC_2624.JPG" alt="">
-                    <img src="Dilip photo.jpg" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
                 </div>
                 <button class="gallery" onclick="clickview(this)">Gallery</button>
             </div>
@@ -215,7 +197,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <img src="picture/Nav2.jpeg" alt="">
                     <img src="picture/nav3.jpeg" alt="">
                     <img src="picture/nav4.jpeg" alt="">
-            </div>
+
+                </div>
                 <button class="gallery" onclick="clickview(this)">Gallery</button>
             </div>
         </div>
@@ -226,7 +209,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <img src="picture/jhanda1.jpeg" alt="">
                 <img src="picture/jhanda2.jpeg" alt="">
                 <div class="hidden-images">
-            </div>
+                    <img src="picture/jhanda2.jpeg" alt="">   
+                </div>
                 <button class="gallery" onclick="clickview(this)">Gallery</button>
             </div>
         </div>
