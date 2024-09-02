@@ -244,7 +244,8 @@
 .photo .second,
 .photo .third,
 .photo .fourth,
-.photo .fifth {
+.photo .fifth,
+.photo .sixth {
   border: 1px solid black;
   display: flex;
 }
@@ -460,7 +461,7 @@
     margin-top: 10px;
   }
 }
-.first, .second, .third, .fourth, .fifth{
+.first, .second, .third, .fourth, .fifth, .sixth{
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -511,7 +512,7 @@
     align-items: center;
     text-align: center; 
   }
-  .first, .second, .third, .fourth, .fifth{
+  .first, .second, .third, .fourth, .fifth, .sixth{
     flex-direction: column;
     align-items: center;
     gap: 10px;
@@ -553,7 +554,7 @@
     align-items: center;
     text-align: center; 
   }
-  .first, .second, .third, .fourth, .fifth{
+  .first, .second, .third, .fourth, .fifth, .sixth{
     flex-direction: column;
     align-items: center;
     text-align: center;
